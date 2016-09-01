@@ -1,0 +1,191 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  font-family: arial;
+}
+
+#root {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.timestamp {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  color: gray;
+}
+
+pre {
+  font-family: arial;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+#spinner {
+  margin: 2rem auto;
+}
+
+.spinner--active:before,
+.spinner--active:after,
+.spinner--active {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+
+.spinner--active {
+  color: gray;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.spinner--active:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner--active:after {
+  left: 3.5em;
+}
+.spinner--active:before,
+.spinner--active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.top-buffer {
+  padding-top:10px;
+}
+#fancy-offline-icon{
+  margin: 0 30% 0 30%;
+ top: 0;
+}
+
+#ready-for-offline-icon{
+ position: fixed;
+ bottom: 0;
+ width:100%;
+}
+
+.information-box {
+  background-color: #323232;
+  border-radius: 3px;
+  height: 35px;
+  animation: fadein 2s;
+  text-align: center;
+  font-size: 28px;
+  color: #f1f1f1;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  transition: margin 1s;
+  cursor:pointer;
+  display:none;
+}
+
+.fancy-offline-icon:hover{
+    margin: 0 29% 0 29%;
+}
+
+.list-element{
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1rem 0 1rem 0;
+}
+
+.commit-title {
+  color: #4e575b;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.commit-author {
+  display: flex;
+  align-items: center;
+  color: #767676;
+  font-size: 15px;
+}
+.commit-avatar {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 1rem;
+}
+
+.commit-icon {
+  display: none;
+  width: 40px;
+  margin-right: 1rem;
+  float: left;
+}
+
+.github-icon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}

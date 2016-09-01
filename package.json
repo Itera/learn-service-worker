@@ -1,0 +1,39 @@
+{
+  "name": "learn-service-worker",
+  "version": "0.0.0",
+  "description": "This is a repository with small tasks to enable offline features with service workers in a simple webapp",
+  "scripts": {
+    "start": "node server.js",
+    "test": "ava",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relekang/learn-service-worker.git"
+  },
+  "author": "Rolf Erik Lekang <me@rolflekang.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relekang/learn-service-worker/issues"
+  },
+  "ava": {
+    "verbose": false
+  },
+  "homepage": "https://github.com/relekang/learn-service-worker#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "finalhandler": "^0.5.0",
+    "lodash": "^4.15.0",
+    "request": "^2.74.0",
+    "serve-static": "^1.11.1",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-plugin-import": "^1.12.0",
+    "jsdomify": "^2.1.0",
+    "sinon": "^1.17.5"
+  }
+}

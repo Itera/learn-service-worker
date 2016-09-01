@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn service-worker</title>
+    <link href="/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/worker.png" sizes="32x32"/>
+    <meta name="theme-color" content="#faf0e6">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="fancy-offline-icon" class="information-box">Offline</div>
+      <h1 class="header">GitHub Commit Feed</h1>
+      <img class="github-icon" src="/icons/github.png" />
+      <div id="spinner"></div>
+      <div id="root"></div>
+      <div id="ready-for-offline-icon" class="information-box">Ready for offline use</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+    <script src="/vendor/idb-keyval-min.js"></script>
+    <script src="/helpers.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
