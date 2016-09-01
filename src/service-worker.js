@@ -5,7 +5,7 @@ self.importScripts('/helpers.js');
 const CACHE_NAME = 'awesome-app--cache-v1';
 
 /*
- * Task 3b)
+ * Task 3a)
  *   Create list of known files
  */
 
@@ -39,7 +39,7 @@ function updateCommits() {
 
 self.addEventListener('install', function (event) {
   /*
-   * Task 3a)
+   * Task 3b)
    *   Pre-cache known files
    */
 });
