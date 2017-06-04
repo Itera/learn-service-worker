@@ -17,7 +17,7 @@ app.get('/manifest.json', (req, res) => {
 });
 
 const commitRequestOptions = {
-  url: 'http://github.aaberge.net:6081/events',
+  url: 'https://api.github.com/events',
   headers: { 'User-Agent': 'pwa' },
 };
 
